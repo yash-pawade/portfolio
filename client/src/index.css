@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+:root {
+  /* Navy Blue / Black / Steel Blue / Cream */
+  --background: #0C0C1E;       /* deep black-navy       */
+  --foreground: #F3E3E2;       /* soft cream text       */
+  --primary: #4A8FC4;          /* steel blue accent     */
+  --primary-foreground: #F3E3E2;
+  --card: #1B2E3C;             /* navy blue card        */
+  --muted: #162536;            /* dark navy muted       */
+  --muted-foreground: #a89a99; /* muted cream-grey      */
+  --border: #1e3348;           /* navy border           */
+
+  --chart-1: #4A8FC4;          /* steel blue            */
+  --chart-2: #1B2E3C;          /* navy blue             */
+  --chart-3: #F3E3E2;          /* cream                 */
+  --chart-4: #2a6496;          /* dark steel blue       */
+  --chart-5: #2a4a5e;          /* lighter navy          */
+}
+
+.dark, :root {
+  --background: #0C0C1E;
+  --foreground: #F3E3E2;
+  --primary: #4A8FC4;
+  --primary-foreground: #F3E3E2;
+  --card: #1B2E3C;
+  --muted: #162536;
+  --muted-foreground: #a89a99;
+  --border: #1e3348;
+  --chart-1: #4A8FC4;
+  --chart-2: #1B2E3C;
+  --chart-3: #F3E3E2;
+  --chart-4: #2a6496;
+  --chart-5: #2a4a5e;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.glow-primary {
+  box-shadow: 0 0 25px rgba(74, 143, 196, 0.4);
+}
+
+.glow-primary-hover:hover {
+  box-shadow: 0 0 15px rgba(74, 143, 196, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #F3E3E2, #4A8FC4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Custom Scrollbar ─────────────────────────────────────────────────────── */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4A8FC4 #0e1a27;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e1a27;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2a6496, #4A8FC4);
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(74, 143, 196, 0.5);
+  border: 1px solid rgba(74, 143, 196, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4A8FC4, #6db3e8);
+  box-shadow: 0 0 14px rgba(74, 143, 196, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #0e1a27;
+}
