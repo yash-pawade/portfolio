@@ -232,7 +232,9 @@ export function ContactContent() {
 
       <motion.div variants={fadeUp} className="pt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
         <a
-          href="mailto:yashpawade19@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=yashpawade19@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex flex-col items-center justify-center gap-3 p-6 bg-card/40 border border-border/50 rounded-xl hover:border-primary hover:bg-card/80 transition-all group"
         >
           <div className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center group-hover:scale-110 group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,122,204,0.3)] transition-all">

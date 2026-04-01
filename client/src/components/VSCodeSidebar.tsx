@@ -118,7 +118,9 @@ export default function VSCodeSidebar({ activeFile, onFileSelect }: VSCodeSideba
             LinkedIn
           </a>
           <a
-            href="mailto:yashpawade19@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=yashpawade19@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
           >
             <Mail size={16} />

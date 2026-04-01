@@ -302,7 +302,9 @@ export default function Home() {
                 <motion.a
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  href="mailto:yashpawade19@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yashpawade19@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-7 py-3.5 border border-primary text-primary font-mono text-sm rounded-md hover:bg-primary/10 transition-colors flex items-center gap-2"
                 >
                   <Mail size={16} /> Say Hello
@@ -501,7 +503,9 @@ export default function Home() {
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:yashpawade19@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=yashpawade19@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-10 py-4 border border-primary text-primary font-mono rounded-md hover:bg-primary/10 transition-colors"
             >
               Say Hello
@@ -517,7 +521,7 @@ export default function Home() {
           {[
             { href: 'https://github.com/yash-pawade', icon: <Github size={20} /> },
             { href: 'https://www.linkedin.com/in/yash-pawade-6125a5379', icon: <Linkedin size={20} /> },
-            { href: 'mailto:yashpawade19@gmail.com', icon: <Mail size={20} /> },
+            { href: 'https://mail.google.com/mail/?view=cm&fs=1&to=yashpawade19@gmail.com', icon: <Mail size={20} /> },
           ].map(({ href, icon }, i) => (
             <motion.a key={i} whileHover={{ y: -4, color: '#64ffda' }} href={href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors">
               {icon}
