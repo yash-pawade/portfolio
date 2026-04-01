@@ -322,7 +322,7 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-2xl border-2 border-primary/40 translate-x-4 translate-y-4 transition-transform group-hover:translate-x-3 group-hover:translate-y-3" />
                 {/* Profile Image */}
                 <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-primary/20 bg-card/60 shadow-[0_0_30px_rgba(74,143,196,0.15)] hover:border-primary/50 transition-colors z-10 group">
-                  <img src="/dp.jpg" alt="Yash Pawade" className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" 
+                  <img src="/dp.png" alt="Yash Pawade" className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" 
                        onError={(e) => {
                          e.currentTarget.style.display = 'none';
                          const sibling = e.currentTarget.nextElementSibling as HTMLElement;
@@ -335,7 +335,7 @@ export default function Home() {
                       <circle cx="12" cy="7" r="4" />
                     </svg>
                     <p className="text-xs font-mono text-muted-foreground text-center leading-relaxed">
-                      Image missing.<br/>Put dp.jpg in<br/>client/public/
+                      Image missing.<br/>Put dp.png in<br/>client/public/
                     </p>
                   </div>
                 </div>
