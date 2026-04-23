@@ -615,9 +615,10 @@ function FunTerminal() {
         n.push(
           { type: 'out', text: '  ✅  HTML5, CSS3, Bootstrap, JavaScript' },
           { type: 'out', text: '  ✅  Python, Git, GitHub' },
-          { type: 'out', text: '  ⏳  NumPy, Pandas, MySQL & SQL' },
+          { type: 'out', text: '  ✅  NumPy, Pandas, Matplotlib, SQL' },
+          { type: 'out', text: '  ⏳  Vector DB, Embedding, FastAPI' },
           { type: 'out', text: '  ⏳  AI Development (live @ Baap Co.)' },
-          { type: 'out', text: '  🔮  Machine Learning, FastAPI, Docker' },
+          { type: 'out', text: '  🔮  Machine Learning, Docker' },
         ); break;
       case 'contact':
         n.push(
@@ -783,6 +784,8 @@ function LearningTree() {
         { label: 'Git & GitHub', status: 'done', note: 'Completed', pct: 70 },
         { label: 'Python Fundamentals', status: 'done', note: 'Completed', pct: 65 },
         { label: 'JavaScript (ES6+)', status: 'done', note: 'Completed', pct: 70 },
+        { label: 'NumPy, Pandas & Matplotlib', status: 'done', note: 'Completed', pct: 85 },
+        { label: 'SQL', status: 'done', note: 'Completed', pct: 80 },
       ],
     },
     {
@@ -790,8 +793,9 @@ function LearningTree() {
       icon: <Loader2 size={16} className="animate-spin" style={{ animationDuration: '3s' }} />,
       color: '#facc15',
       leaves: [
-        { label: 'NumPy & Pandas', status: 'active', note: 'In Progress', pct: 55 },
-        { label: 'MySQL & SQL', status: 'active', note: 'In Progress', pct: 35 },
+        { label: 'Vector DB', status: 'active', note: 'In Progress', pct: 40 },
+        { label: 'Embedding', status: 'active', note: 'In Progress', pct: 45 },
+        { label: 'FastAPI', status: 'active', note: 'In Progress', pct: 30 },
         { label: 'AI Team (Baap Co.)', status: 'active', note: 'Live Work', pct: 50 },
       ],
     },
@@ -803,7 +807,6 @@ function LearningTree() {
         { label: 'Machine Learning', status: 'planned', note: 'Queued' },
         { label: 'Data Science pipelines', status: 'planned', note: 'Queued' },
         { label: 'AI & LLM Integration', status: 'planned', note: 'Queued' },
-        { label: 'Django / FastAPI', status: 'planned', note: 'Queued' },
         { label: 'Docker & DevOps', status: 'planned', note: 'Queued' },
       ],
     },
